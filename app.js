@@ -15,12 +15,8 @@ app.get("/api/v1/tours", (req, res) => {
     })
 });
 
-app.get("/", (req, res) => {
-  res.status(200).json({ message: "🤶", app: "matours" });
-});
-
 app.post("/", (req, res) => {
-  res.send("post here babe");
+  res.send("you post here babe");
 });
 
 const port = 3000;
