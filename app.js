@@ -112,9 +112,47 @@ const deleteATour = (req, res) => {
 
 }
 
+const getAllUsers = (req, res) => {
+    res.status(500).json({
+        status : "error",
+        message : "this route are still under consturction"
+    })
+}
+
+const getAUser = (req, res) => {
+    res.status(500).json({
+        status : "error",
+        message : "this route are still under consturction"
+    })
+}
+
+const postAUser = (req, res) => {
+    res.status(500).json({
+        status : "error",
+        message : "this route are still under consturction"
+    })
+}
+
+const editAUser = (req, res) => {
+    res.status(500).json({
+        status : "error",
+        message : "this route are still under consturction"
+    })
+}
+
+const deleteAUser = (req, res) => {
+    res.status(500).json({
+        status : "error",
+        message : "this route are still under consturction"
+    })
+}
+
 // 3) ROUTE
 app.route("/api/v1/tours").get(getAllTours).post(postATour);
 app.route("/api/v1/tours/:id").get(getATour).patch(editATour).delete(deleteATour);
+
+app.route("/api/v1/users").get(getAllUsers).post(postAUser);
+app.route("/api/v1/users/:id").get(getAUser).patch(editAUser).delete(deleteAUser);
 
 // 4) SERVER
 const port = 3000;
