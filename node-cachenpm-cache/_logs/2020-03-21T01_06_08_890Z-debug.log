@@ -1,0 +1,42 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Daliska F. Royan\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'prettier',
+1 verbose cli   '--save-dev'
+1 verbose cli ]
+2 info using npm@6.14.3
+3 info using node@v12.16.1
+4 verbose npm-session 559524947da39ba4
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 warn registry Using stale data from http://registry.npmjs.org/ because the host is inaccessible -- are you offline?
+8 warn registry Using stale data from http://registry.npmjs.org/ due to a request error during revalidation.
+9 http fetch GET 200 http://registry.npmjs.org/prettier 135ms (from cache)
+10 silly fetchPackageMetaData error for prettier@latest request to http://registry.npmjs.org/prettier/-/prettier-1.19.1.tgz failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+11 timing stage:rollbackFailedOptional Completed in 1ms
+12 timing stage:runTopLevelLifecycles Completed in 899ms
+13 verbose type system
+14 verbose stack FetchError: request to http://registry.npmjs.org/prettier/-/prettier-1.19.1.tgz failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+14 verbose stack     at ClientRequest.<anonymous> (C:\Users\Daliska F. Royan\AppData\Roaming\npm\node_modules\npm\node_modules\node-fetch-npm\src\index.js:68:14)
+14 verbose stack     at ClientRequest.emit (events.js:311:20)
+14 verbose stack     at Socket.socketErrorListener (_http_client.js:426:9)
+14 verbose stack     at Socket.emit (events.js:311:20)
+14 verbose stack     at emitErrorNT (internal/streams/destroy.js:92:8)
+14 verbose stack     at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+14 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:84:21)
+15 verbose cwd C:\Users\Daliska F. Royan\Desktop\express-matour-API
+16 verbose Windows_NT 10.0.18362
+17 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Daliska F. Royan\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "i" "prettier" "--save-dev"
+18 verbose node v12.16.1
+19 verbose npm  v6.14.3
+20 error code ENOTFOUND
+21 error errno ENOTFOUND
+22 error network request to http://registry.npmjs.org/prettier/-/prettier-1.19.1.tgz failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+23 error network This is a problem related to network connectivity.
+23 error network In most cases you are behind a proxy or have bad network settings.
+23 error network
+23 error network If you are behind a proxy, please make sure that the
+23 error network 'proxy' config is set properly.  See: 'npm help config'
+24 verbose exit [ 1, true ]

@@ -1,0 +1,28 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Daliska F. Royan\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'eslint',
+1 verbose cli   '--save-dev'
+1 verbose cli ]
+2 info using npm@6.14.3
+3 info using node@v12.16.1
+4 verbose npm-session 234dde9f8a5d7e2e
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData error for eslint@latest Response timeout while trying to fetch http://registry.npmjs.org/eslint (over 30000ms)
+8 timing stage:rollbackFailedOptional Completed in 1ms
+9 timing stage:runTopLevelLifecycles Completed in 30688ms
+10 verbose type body-timeout
+11 verbose stack FetchError: Response timeout while trying to fetch http://registry.npmjs.org/eslint (over 30000ms)
+11 verbose stack     at Timeout._onTimeout (C:\Users\Daliska F. Royan\AppData\Roaming\npm\node_modules\npm\node_modules\node-fetch-npm\src\body.js:189:16)
+11 verbose stack     at listOnTimeout (internal/timers.js:549:17)
+11 verbose stack     at processTimers (internal/timers.js:492:7)
+12 verbose cwd C:\Users\Daliska F. Royan\Desktop\express-matour-API
+13 verbose Windows_NT 10.0.18362
+14 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Daliska F. Royan\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "i" "eslint" "--save-dev"
+15 verbose node v12.16.1
+16 verbose npm  v6.14.3
+17 error Response timeout while trying to fetch http://registry.npmjs.org/eslint (over 30000ms)
+18 verbose exit [ 1, true ]

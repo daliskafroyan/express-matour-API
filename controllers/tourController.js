@@ -2,6 +2,16 @@ const fs = require('fs');
 
 const tours = JSON.parse(fs.readFileSync(`${__dirname}/../data/tours.json`));
 
+exports.checkBody = (req, res, next) => {
+  if (!req.body.name || !req.body.price) {
+    return res.status(404).json({
+      status: 'failed',
+      message: 'name or price are missing'
+    });
+  }
+  next();
+};
+
 exports.checkID = (req, res, next, val) => {
   let id = req.params.id * 1;
   let tour = tours.find(el => el.id === id);
@@ -41,8 +51,8 @@ exports.getATour = (req, res) => {
 };
 
 exports.postATour = (req, res) => {
-  const newId = tours[tours.length - 1].id + 1;
-  const newTour = Object.assign({ id: newId }, req.body);
+  let newId = tours[tours.length - 1].id + 1;
+  let newTour = Object.assign({ id: newId }, req.body);
 
   tours.push(newTour);
 
